@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fullpage.js sample</title>
+    <link rel="stylesheet" href="fullpage.min.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+    <script src="fullpage.min.js" defer></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js" defer></script>
+    <script src="app.js" defer></script>
+</head>
+
+<body>
+    <ul id="menu">
+        <a href="#firstPage">
+            <li data-menuanchor="firstPage" class="active">First section</li>
+        </a>
+        <a href="#secondPage">
+            <li data-menuanchor="secondPage">Second section</li>
+        </a>
+        <a href="#thirdPage">
+            <li data-menuanchor="thirdPage">Third section</li>
+        </a>
+        <a href="#fourthPage">
+            <li data-menuanchor="fourthPage">Fourth section</li>
+        </a>
+    </ul>
+    <div id="fullpage">
+        <div class="section active" id="section0">
+            <div class="child-page dark">
+                <video src="Intro.mp4" muted autoplay></video>
+                <div class="content" data-animated>
+                    <h1>First Section</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section1">
+            <div class="child-page">
+                <div class="content" data-animated>
+                    <h1>Second Section</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section2">
+            <div class="child-page">
+                <div class="content" data-animated>
+                    <h1>Third Section</h1>
+                </div>
+            </div>
+        </div>
+        <div class="section" id="section3">
+            <div class="child-page">
+                <div class="content" data-animated>
+                    <h1>Fourth Section</h1>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
